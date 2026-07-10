@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyTime · Your time. Your altitude.</title>
+  <meta name="description" content="SkyTime turns your long-haul flight into the most productive hours of your day. No friction, no fluff — just a smart plan that works the moment you board. Online or offline." />
+  <meta name="theme-color" content="#0D0D0F" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top" aria-label="SkyTime home">
+        <svg class="logo" width="26" height="26" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <path d="M7 15a7 7 0 0 1 14 0v4a3 3 0 0 1-3 3H10a3 3 0 0 1-3-3z" stroke="#F5F5F7" stroke-width="1.7"/>
+          <path d="M7.6 17.6h12.8" stroke="#7ECFBA" stroke-width="1.7" stroke-linecap="round"/>
+          <circle cx="14" cy="17.6" r="2.3" fill="#7ECFBA"/>
+        </svg>
+        <span class="nav__wordmark">SkyTime</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#how-it-works" data-nav-link>How it works</a>
+        <a href="#timeline" data-nav-link>Your plan</a>
+        <a href="#features" data-nav-link>Features</a>
+        <a href="#faq" data-nav-link>FAQ</a>
+      </nav>
+      <a href="#get" class="btn btn--primary nav__cta">Get the app</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle aria-label="Open menu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+      <nav class="mobile-menu__links" aria-label="Mobile">
+        <a href="#how-it-works" data-nav-link data-mobile-link><span>How it works</span></a>
+        <a href="#timeline" data-nav-link data-mobile-link><span>Your plan</span></a>
+        <a href="#features" data-nav-link data-mobile-link><span>Features</span></a>
+        <a href="#faq" data-nav-link data-mobile-link><span>FAQ</span></a>
+        <a href="#about" data-nav-link data-mobile-link><span>About</span></a>
+      </nav>
+      <a href="#get" class="btn btn--primary mobile-menu__cta" data-mobile-link>Get the app</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <p class="eyebrow" data-reveal>Flight companion app</p>
+        <h1 class="hero__headline" data-reveal>Your time.<br>Your altitude.</h1>
+        <p class="hero__pitch" data-reveal>SkyTime builds your in-flight schedule the moment you board — so you land focused, not drained. Works with wifi or without.</p>
+        <div class="store-badges" data-reveal>
+          <a href="#get" class="store-badge" aria-label="Download on the App Store">
+            <svg class="store-badge__icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.05 12.94c-.02-2.13 1.74-3.15 1.82-3.2-.99-1.45-2.54-1.65-3.09-1.67-1.31-.13-2.57.77-3.24.77-.67 0-1.7-.75-2.8-.73-1.44.02-2.77.84-3.51 2.12-1.5 2.6-.38 6.45 1.07 8.56.71 1.03 1.55 2.18 2.66 2.14 1.07-.04 1.47-.69 2.76-.69 1.29 0 1.65.69 2.78.67 1.15-.02 1.87-1.05 2.57-2.09.81-1.2 1.15-2.36 1.16-2.42-.03-.01-2.22-.85-2.24-3.37zM14.92 6.66c.59-.72.99-1.71.88-2.71-.85.04-1.89.57-2.5 1.28-.55.63-1.03 1.65-.9 2.62.95.07 1.92-.48 2.52-1.19z"/>
+            </svg>
+            <span class="store-badge__text">
+              <span class="store-badge__caption">Download on the</span>
+              <span class="store-badge__name">App Store</span>
+            </span>
+          </a>
+          <a href="#get" class="store-badge" aria-label="Get it on Google Play">
+            <svg class="store-badge__icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.6 2.3c-.24.25-.38.64-.38 1.15v17.1c0 .51.14.9.39 1.14l.06.05L13.2 12.1v-.2L3.66 2.25l-.06.05zM16.4 15.3l-3.2-3.2v-.2l3.2-3.2.07.04 3.79 2.16c1.08.61 1.08 1.62 0 2.24l-3.79 2.15-.07.05zM13.2 11.9l3.2-3.2L4.3 2.05c-.36-.21-.71-.23-.95-.05l9.85 9.9zM3.35 21.95c.24.18.59.16.95-.05L16.4 15.1l-3.2-3.2-9.85 10.05z"/>
+            </svg>
+            <span class="store-badge__text">
+              <span class="store-badge__caption">Get it on</span>
+              <span class="store-badge__name">Google Play</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Product mockup -->
+      <div class="hero__device" data-reveal data-delay="120" aria-hidden="true">
+        <div class="phone">
+          <span class="phone__notch"></span>
+          <div class="phone__screen">
+            <div class="phone__top">
+              <span class="phone__route">LHR → JFK</span>
+              <span class="phone__meta">8h 15m</span>
+            </div>
+            <p class="phone__lands">Lands 2:20 PM · local time</p>
+            <ul class="phone__plan">
+              <li class="phone__block phone__block--now">
+                <span class="phone__tag">Now</span>
+                <span class="phone__name">Settle in</span>
+                <span class="phone__dur">20m</span>
+              </li>
+              <li class="phone__block">
+                <span class="phone__tag phone__tag--focus">Focus</span>
+                <span class="phone__name">Deep work</span>
+                <span class="phone__dur">2h</span>
+              </li>
+              <li class="phone__block">
+                <span class="phone__tag">Meal</span>
+                <span class="phone__name">Eat + reset</span>
+                <span class="phone__dur">45m</span>
+              </li>
+              <li class="phone__block">
+                <span class="phone__tag">Rest</span>
+                <span class="phone__name">Sleep window</span>
+                <span class="phone__dur">3h</span>
+              </li>
+              <li class="phone__block">
+                <span class="phone__tag phone__tag--land">Land</span>
+                <span class="phone__name">Wind-down</span>
+                <span class="phone__dur">40m</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#problem" class="hero__scroll" aria-label="Scroll to learn more">
+      <span class="hero__scroll-line" aria-hidden="true"></span>
+      <span class="hero__scroll-label">Scroll</span>
+    </a>
+  </section>
+
+  <!-- Problem -->
+  <section class="problem" id="problem">
+    <div class="container">
+      <p class="eyebrow" data-reveal>The problem</p>
+      <h2 class="problem__pull" data-reveal>Most people land more tired than when they boarded.</h2>
+      <p class="problem__body" data-reveal>Not because the flight was long. Because there was no plan. You scrolled, half-watched, half-slept — and arrived with nothing to show for 9 hours in the air. That time was yours. SkyTime helps you use it.</p>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how" id="how-it-works">
+    <div class="container container--wide">
+      <h2 class="section-heading" data-reveal>How it works</h2>
+      <div class="how__layout">
+        <div class="how__visual" data-reveal aria-hidden="true">
+          <div class="plan-card" data-active-step="1">
+            <div class="plan-card__top">
+              <span class="plan-card__route">LHR → JFK</span>
+              <span class="plan-card__meta">8h 15m · lands 2:20 PM</span>
+            </div>
+            <ul class="plan-card__blocks">
+              <li class="plan-card__block" data-step="1">
+                <span class="plan-card__tag">Boarding</span>
+                <span class="plan-card__name">Settle in</span>
+                <span class="plan-card__dur">20m</span>
+              </li>
+              <li class="plan-card__block" data-step="2">
+                <span class="plan-card__tag plan-card__tag--accent">Focus</span>
+                <span class="plan-card__name">Deep work</span>
+                <span class="plan-card__dur">2h</span>
+              </li>
+              <li class="plan-card__block" data-step="2">
+                <span class="plan-card__tag">Meal</span>
+                <span class="plan-card__name">Eat + reset</span>
+                <span class="plan-card__dur">45m</span>
+              </li>
+              <li class="plan-card__block" data-step="2">
+                <span class="plan-card__tag">Rest</span>
+                <span class="plan-card__name">Sleep window</span>
+                <span class="plan-card__dur">3h</span>
+              </li>
+              <li class="plan-card__block" data-step="3">
+                <span class="plan-card__tag plan-card__tag--accent">Land</span>
+                <span class="plan-card__name">Arrival prep</span>
+                <span class="plan-card__dur">40m</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="how__steps">
+          <div class="how__step" data-reveal data-step-index="1">
+            <span class="how__step-num">01</span>
+            <h3 class="how__title">Enter your flight</h3>
+            <p class="how__desc">Duration, timezone, and what you want from this block of time. Takes 30 seconds.</p>
+          </div>
+          <div class="how__step" data-reveal data-delay="80" data-step-index="2">
+            <span class="how__step-num">02</span>
+            <h3 class="how__title">Get your plan</h3>
+            <p class="how__desc">SkyTime structures the hours for you — focus blocks, rest, meals — tuned to when you land.</p>
+          </div>
+          <div class="how__step" data-reveal data-delay="160" data-step-index="3">
+            <span class="how__step-num">03</span>
+            <h3 class="how__title">Land well</h3>
+            <p class="how__desc">Arrive at your destination with the hours behind you, not against you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- See your plan (sample timeline) -->
+  <section class="timeline" id="timeline">
+    <div class="container container--wide">
+      <div class="timeline__head">
+        <div>
+          <h2 class="section-heading" data-reveal>See your plan</h2>
+          <p class="timeline__intro" data-reveal>A 9-hour flight, London to New York. Here's how SkyTime structures it — so you step off ready, not wrecked.</p>
+        </div>
+        <div class="timeline__nav" data-reveal aria-hidden="true">
+          <button type="button" class="timeline__nav-btn" data-timeline-prev aria-label="Scroll plan left">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button type="button" class="timeline__nav-btn" data-timeline-next aria-label="Scroll plan right">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+      <ol class="timeline__list" data-timeline-viewport role="region" aria-label="Sample flight plan, 9 hours London to New York" tabindex="0">
+        <li class="timeline__item" data-reveal>
+          <span class="timeline__time">00:00</span>
+          <div class="timeline__body">
+            <span class="timeline__tag">Boarding</span>
+            <h3 class="timeline__name">Settle in · 20 min</h3>
+            <p class="timeline__note">Stow your bag, set your destination time. SkyTime moves your clock to where you're going, not where you left.</p>
+          </div>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <span class="timeline__time">00:20</span>
+          <div class="timeline__body">
+            <span class="timeline__tag timeline__tag--focus">Focus</span>
+            <h3 class="timeline__name">Deep work · 2 hrs</h3>
+            <p class="timeline__note">Your hardest task, while you're fresh. "Focus block: 2 hrs. You've done this before."</p>
+          </div>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <span class="timeline__time">02:20</span>
+          <div class="timeline__body">
+            <span class="timeline__tag">Meal</span>
+            <h3 class="timeline__name">Eat + reset · 45 min</h3>
+            <p class="timeline__note">Eat on destination time. Hydrate. A clean break before the long rest.</p>
+          </div>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <span class="timeline__time">03:05</span>
+          <div class="timeline__body">
+            <span class="timeline__tag">Rest</span>
+            <h3 class="timeline__name">Sleep window · 3.5 hrs</h3>
+            <p class="timeline__note">Lights down, timed to your arrival morning. This is the part that beats jet lag.</p>
+          </div>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <span class="timeline__time">06:35</span>
+          <div class="timeline__body">
+            <span class="timeline__tag timeline__tag--focus">Focus</span>
+            <h3 class="timeline__name">Light work · 1 hr</h3>
+            <p class="timeline__note">Easy reading or planning as you wake — nothing heavy.</p>
+          </div>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <span class="timeline__time">07:35</span>
+          <div class="timeline__body">
+            <span class="timeline__tag timeline__tag--land">Land</span>
+            <h3 class="timeline__name">Arrival prep · 40 min</h3>
+            <p class="timeline__note">Plan your first two hours on the ground. Step off aligned to local time — not against it.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container container--wide">
+      <h2 class="section-heading" data-reveal>What you get</h2>
+      <div class="bento">
+        <div class="bento__item bento__item--featured" data-reveal data-delay="0">
+          <div>
+            <svg class="bento__icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v5l3 2"/>
+            </svg>
+            <h3 class="bento__title">Focus blocks</h3>
+            <p class="bento__desc">Structured work and reading sessions, sized to your flight. "Focus block: 2 hrs. You've done this before."</p>
+          </div>
+          <div class="bento__bar" aria-hidden="true">
+            <span class="bento__seg" style="--w:8%"></span>
+            <span class="bento__seg bento__seg--active" style="--w:46%"></span>
+            <span class="bento__seg" style="--w:14%"></span>
+            <span class="bento__seg" style="--w:24%"></span>
+            <span class="bento__seg" style="--w:8%"></span>
+          </div>
+        </div>
+        <div class="bento__item" data-reveal data-delay="80">
+          <svg class="bento__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+          </svg>
+          <h3 class="bento__title">Rest &amp; meal timing</h3>
+          <p class="bento__desc">Sleep and eat at the right moments for where you're headed, so jet lag has less to work with.</p>
+        </div>
+        <div class="bento__item" data-reveal data-delay="160">
+          <svg class="bento__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4.5 16.5a4 4 0 0 1 .8-7.9 6 6 0 0 1 11.5-1.6 4.5 4.5 0 0 1 1.4 8.8"/>
+            <path d="M8 19h9"/>
+          </svg>
+          <h3 class="bento__title">Works offline</h3>
+          <p class="bento__desc">Build your plan on the ground; it runs in the air with wifi or without.</p>
+        </div>
+        <div class="bento__item bento__item--wide" data-reveal data-delay="240">
+          <svg class="bento__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 6 9 17l-5-5"/>
+          </svg>
+          <h3 class="bento__title">Land-well guidance</h3>
+          <p class="bento__desc">SkyTime tells you not just when you land, but how to land feeling good — your first two hours on the ground, planned before you arrive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who it's for -->
+  <section class="audience" id="audience">
+    <div class="container container--wide">
+      <h2 class="section-heading" data-reveal>Who it's for</h2>
+      <div class="audience__list">
+        <div class="audience__row" data-reveal data-delay="0">
+          <span class="audience__num">01</span>
+          <svg class="audience__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="11" rx="1.5"/>
+            <path d="M2 19h20"/>
+          </svg>
+          <h3 class="audience__title">Digital nomads</h3>
+          <p class="audience__desc">You work from anywhere. The flight is just another place to get things done well.</p>
+        </div>
+        <div class="audience__row" data-reveal data-delay="80">
+          <span class="audience__num">02</span>
+          <svg class="audience__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 19.5V5a2 2 0 0 1 2-2h13v15.5"/>
+            <path d="M6 21.5a2 2 0 0 1-2-2.5H19v2.5z"/>
+          </svg>
+          <h3 class="audience__title">Students</h3>
+          <p class="audience__desc">Long flights home or abroad. Turn them into reading, study, or real rest.</p>
+        </div>
+        <div class="audience__row" data-reveal data-delay="160">
+          <span class="audience__num">03</span>
+          <svg class="audience__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="7" width="18" height="13" rx="2"/>
+            <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+          </svg>
+          <h3 class="audience__title">Young professionals</h3>
+          <p class="audience__desc">You land and go straight into a meeting. Arrive sharp, not running on fumes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why SkyTime -->
+  <section class="why" id="why">
+    <div class="container">
+      <p class="eyebrow" data-reveal>The difference</p>
+      <h2 class="why__pull" data-reveal>Not a flight tracker. Not an entertainment app.</h2>
+      <p class="why__body" data-reveal>A tracker tells you where the plane is. SkyTime tells you what to do with the time inside it — a personal planning layer for the hours between takeoff and landing, online or offline.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container container--wide">
+      <h2 class="section-heading" data-reveal>Questions</h2>
+      <div class="faq__list">
+        <details class="faq__item" data-reveal data-delay="0">
+          <summary class="faq__q">Does it work without wifi?</summary>
+          <p class="faq__a">Yes. Build your plan on the ground and it runs offline for the whole flight. No connection needed in the air.</p>
+        </details>
+        <details class="faq__item" data-reveal data-delay="40">
+          <summary class="faq__q">Is it a flight tracker?</summary>
+          <p class="faq__a">No. SkyTime doesn't track the plane — it plans your time. It's a planning layer, not a map.</p>
+        </details>
+        <details class="faq__item" data-reveal data-delay="80">
+          <summary class="faq__q">Which flights does it work for?</summary>
+          <p class="faq__a">Any flight, though it earns its place on long-haul. The longer the block of time, the more there is to plan.</p>
+        </details>
+        <details class="faq__item" data-reveal data-delay="120">
+          <summary class="faq__q">What does it cost?</summary>
+          <p class="faq__a">SkyTime is a paid app, with a free trial so you can plan your first flight before you commit. Pricing is shown at launch.</p>
+        </details>
+        <details class="faq__item" data-reveal data-delay="160">
+          <summary class="faq__q">When can I get it?</summary>
+          <p class="faq__a">SkyTime is coming to the App Store and Google Play. Add yourself below and you'll be first to know.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get the app -->
+  <section class="cta" id="get">
+    <div class="container cta__inner">
+      <p class="eyebrow" data-reveal>Ready when you are</p>
+      <h2 class="cta__headline" data-reveal>Make your next flight count.</h2>
+      <p class="cta__sub" data-reveal>Your time. Your altitude. Join the waitlist and be first to fly with SkyTime.</p>
+
+      <form class="waitlist" data-reveal data-waitlist-form>
+        <label for="waitlist-email" class="sr-only">Email address</label>
+        <input
+          type="email"
+          id="waitlist-email"
+          name="email"
+          class="waitlist__input"
+          placeholder="you@example.com"
+          autocomplete="email"
+          inputmode="email"
+          required
+        />
+        <button type="submit" class="btn btn--primary waitlist__submit">
+          <span data-waitlist-submit-text>Notify me</span>
+        </button>
+      </form>
+      <p class="waitlist__status" data-waitlist-status role="status" aria-live="polite"></p>
+
+      <p class="cta__divider" data-reveal>Coming soon to the App Store and Google Play</p>
+      <div class="store-badges store-badges--center" data-reveal>
+        <a href="#" class="store-badge" aria-label="Download on the App Store">
+          <svg class="store-badge__icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.05 12.94c-.02-2.13 1.74-3.15 1.82-3.2-.99-1.45-2.54-1.65-3.09-1.67-1.31-.13-2.57.77-3.24.77-.67 0-1.7-.75-2.8-.73-1.44.02-2.77.84-3.51 2.12-1.5 2.6-.38 6.45 1.07 8.56.71 1.03 1.55 2.18 2.66 2.14 1.07-.04 1.47-.69 2.76-.69 1.29 0 1.65.69 2.78.67 1.15-.02 1.87-1.05 2.57-2.09.81-1.2 1.15-2.36 1.16-2.42-.03-.01-2.22-.85-2.24-3.37zM14.92 6.66c.59-.72.99-1.71.88-2.71-.85.04-1.89.57-2.5 1.28-.55.63-1.03 1.65-.9 2.62.95.07 1.92-.48 2.52-1.19z"/>
+          </svg>
+          <span class="store-badge__text">
+            <span class="store-badge__caption">Download on the</span>
+            <span class="store-badge__name">App Store</span>
+          </span>
+        </a>
+        <a href="#" class="store-badge" aria-label="Get it on Google Play">
+          <svg class="store-badge__icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3.6 2.3c-.24.25-.38.64-.38 1.15v17.1c0 .51.14.9.39 1.14l.06.05L13.2 12.1v-.2L3.66 2.25l-.06.05zM16.4 15.3l-3.2-3.2v-.2l3.2-3.2.07.04 3.79 2.16c1.08.61 1.08 1.62 0 2.24l-3.79 2.15-.07.05zM13.2 11.9l3.2-3.2L4.3 2.05c-.36-.21-.71-.23-.95-.05l9.85 9.9zM3.35 21.95c.24.18.59.16.95-.05L16.4 15.1l-3.2-3.2-9.85 10.05z"/>
+          </svg>
+          <span class="store-badge__text">
+            <span class="store-badge__caption">Get it on</span>
+            <span class="store-badge__name">Google Play</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__visual" aria-hidden="true">
+          <span class="about__monogram">K</span>
+          <svg class="about__path" viewBox="0 0 200 200" fill="none" preserveAspectRatio="none">
+            <path d="M16 158 C 70 70, 150 70, 184 22" stroke="#7ECFBA" stroke-width="1.5" stroke-dasharray="3 7" stroke-linecap="round"/>
+            <circle cx="184" cy="22" r="3.5" fill="#7ECFBA"/>
+            <circle cx="16" cy="158" r="3.5" fill="#3A3A3C"/>
+          </svg>
+        </div>
+        <div class="about__text">
+          <h2 class="section-heading" data-reveal>About</h2>
+          <blockquote class="about__quote" data-reveal>
+            <p>I'm Kiana, and I'm solving one of the most overlooked problems in travel — wasted time at 35,000 feet. SkyTime turns your flight into the most productive hours of your day. No friction, no fluff — just a smart plan that works the moment you board.</p>
+          </blockquote>
+          <p class="about__name" data-reveal>Kiana · Founder, SkyTime</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container container--wide footer__inner">
+      <div class="footer__brand">
+        <a class="footer__logo" href="#top" aria-label="SkyTime home">
+          <svg class="logo" width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <path d="M7 15a7 7 0 0 1 14 0v4a3 3 0 0 1-3 3H10a3 3 0 0 1-3-3z" stroke="#F5F5F7" stroke-width="1.7"/>
+            <path d="M7.6 17.6h12.8" stroke="#7ECFBA" stroke-width="1.7" stroke-linecap="round"/>
+            <circle cx="14" cy="17.6" r="2.3" fill="#7ECFBA"/>
+          </svg>
+          <span>SkyTime</span>
+        </a>
+        <p class="footer__bio">Flight companion app. Turn dead hours into your best ones. Your time. Your altitude.</p>
+        <div class="footer__links">
+          <a href="#" class="footer__social" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__social" aria-label="X / Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <span class="footer__heading">Site</span>
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="#how-it-works">How it works</a>
+          <a href="#timeline">Your plan</a>
+          <a href="#features">Features</a>
+          <a href="#faq">FAQ</a>
+          <a href="#about">About</a>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <span class="footer__heading">Get the app</span>
+        <p class="footer__bio">Coming soon to the App Store and Google Play. Be first to know.</p>
+        <a href="#get" class="btn btn--ghost footer__cta">Notify me</a>
+      </div>
+    </div>
+    <div class="container container--wide">
+      <p class="footer__copy">© 2026 SkyTime. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script type="module" src="scripts/waitlist.js"></script>
+</body>
+</html>

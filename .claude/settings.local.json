@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /Users/kiana/Desktop/website/styles /Users/kiana/Desktop/website/scripts)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npx skills *)",
+      "Bash(python3 -c \"import pdfplumber\")",
+      "WebSearch",
+      "Bash(gh auth *)"
+    ]
+  }
+}

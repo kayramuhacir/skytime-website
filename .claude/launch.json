@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "skytime",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-c", "import os; os.chdir('/tmp/skytime'); from http.server import test, SimpleHTTPRequestHandler; test(SimpleHTTPRequestHandler, port=3456)"],
+      "port": 3456
+    },
+    {
+      "name": "2see",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-c", "import os; os.chdir('/tmp/2see-preview'); from http.server import test, SimpleHTTPRequestHandler; test(SimpleHTTPRequestHandler, port=4178)"],
+      "port": 4178
+    }
+  ]
+}
