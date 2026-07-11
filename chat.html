@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat · SkyTime</title>
+  <meta name="description" content="Ask the SkyTime assistant about the app, the waitlist, or anything else." />
+  <meta name="theme-color" content="#0D0D0F" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/chat.css" />
+</head>
+<body class="chat-page">
+
+  <a class="skip-link" href="#chat-log">Skip to chat</a>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="/" aria-label="SkyTime home">
+        <svg class="logo" width="26" height="26" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <path d="M7 15a7 7 0 0 1 14 0v4a3 3 0 0 1-3 3H10a3 3 0 0 1-3-3z" stroke="#F5F5F7" stroke-width="1.7"/>
+          <path d="M7.6 17.6h12.8" stroke="#7ECFBA" stroke-width="1.7" stroke-linecap="round"/>
+          <circle cx="14" cy="17.6" r="2.3" fill="#7ECFBA"/>
+        </svg>
+        <span class="nav__wordmark">SkyTime</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="chat-shell">
+    <div class="chat-log" id="chat-log" role="log" aria-live="polite">
+      <div class="chat-msg chat-msg--assistant" dir="auto">
+        Hi — I'm the SkyTime assistant. Ask me anything about the app or the waitlist.<br />
+        سلام — من دستیار SkyTime هستم. هر سوالی درباره اپ یا لیست انتظار داری بپرس.
+      </div>
+    </div>
+
+    <form class="chat-form" id="chat-form">
+      <input
+        type="text"
+        id="chat-input"
+        class="chat-input"
+        placeholder="Type a message… / پیامت رو بنویس…"
+        autocomplete="off"
+        dir="auto"
+        required
+      />
+      <button type="submit" class="btn btn--primary chat-send">Send</button>
+    </form>
+  </main>
+
+  <script type="module" src="scripts/chat-client.js"></script>
+</body>
+</html>
