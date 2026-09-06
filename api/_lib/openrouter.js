@@ -1,8 +1,11 @@
-// Free OpenRouter models get shared, fluctuating rate limits — popular ones like
-// meta-llama/llama-3.3-70b-instruct:free are often saturated. nemotron-3-nano is smaller
-// but confirmed working (tool calls + Persian) as of 2026-07-11. Override with OPENROUTER_MODEL
-// if this one becomes unavailable or you want to try a bigger free model.
-const MODEL = process.env.OPENROUTER_MODEL || 'nvidia/nemotron-3-nano-30b-a3b:free';
+// Free OpenRouter models get shared, fluctuating rate limits and are sometimes retired
+// outright — the original pick (nvidia/nemotron-3-nano-30b-a3b:free) 404s as of 2026-09-06
+// because it no longer exists. nemotron-3-super-120b-a12b:free confirmed working (plain
+// replies + tool calls) as of 2026-09-06. If this one stops working, hit
+// GET https://openrouter.ai/api/v1/models, filter for the ":free" suffix, and test a
+// candidate directly against /chat/completions before swapping it in — don't assume this
+// list is still current. Override with OPENROUTER_MODEL without a redeploy if needed.
+const MODEL = process.env.OPENROUTER_MODEL || 'nvidia/nemotron-3-super-120b-a12b:free';
 const MAX_TOOL_ROUNDS = 4;
 
 async function chatCompletion(messages, tools) {
