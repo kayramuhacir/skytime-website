@@ -48,7 +48,7 @@ form.addEventListener('submit', async e => {
   } catch {
     pending.classList.remove('chat-msg--pending');
     pending.classList.add('chat-msg--error');
-    pending.textContent = "Something went wrong. Please try again. / مشکلی پیش اومد، دوباره امتحان کن.";
+    pending.textContent = "Something went wrong. Please try again.";
   } finally {
     input.disabled = false;
     input.focus();

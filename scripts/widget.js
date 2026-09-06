@@ -81,7 +81,7 @@
     panel.classList.toggle('open');
     if (panel.classList.contains('open')) {
       if (!greeted) {
-        appendMessage('Hi — ask me anything about SkyTime. / سلام، هر سوالی درباره SkyTime داری بپرس.', 'assistant');
+        appendMessage('Hi — ask me anything about SkyTime.', 'assistant');
         greeted = true;
       }
       input.focus();
